@@ -3,6 +3,7 @@
 const tape = require('tape')
 const trainNumbers = require('./index')
 const moment = require('moment')
+const isDate = require('lodash.isdate')
 
 tape('db-train-numbers', async (t) => {
 	const start = moment(new Date).subtract(1, 'hours').toDate()
@@ -14,6 +15,8 @@ tape('db-train-numbers', async (t) => {
 	for (let entry of data) {
 		t.ok(entry.train.length >= 2, 'entry train')
 		t.ok(entry.journeyRef.length >= 10, 'entry journeyRef')
+		t.ok(entry.journeyRef.length >= 10, 'entry journeyRef')
+		t.ok(isDate(entry.lastDeparture), 'entry lastDeparture')
 	}
 
 	t.end()

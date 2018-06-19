@@ -30,7 +30,11 @@ const trainNumbers = async (start, end, opt = {}) => {
     const queue = new PQueue({concurrency: 16})
 
     const data = await queue.addAll(dates.map(d => (() => zugradar.positions(d, true))))
-    return unionBy(...data, 'name').map(d => ({train: d.name, journeyRef: d.id}))
+    return unionBy(...data, 'name').map(d => ({
+        train: d.name,
+        journeyRef: d.id,
+        lastDeparture: new Date(d.previousStation.departure*1000)
+    }))
 }
 
 module.exports = trainNumbers

@@ -37,34 +37,47 @@ Returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 ```js
 [
     {
+        train: "IC 11840",
+        journeyRef: "84/326594/18/19/80",
+        lastDeparture: "2018-06-19T03:21:00.000Z"
+    },
+    {
         train: "IC 528",
-        journeyRef: "84/324965/18/19/80"
+        journeyRef: "84/324965/18/19/80",
+        lastDeparture: "2018-06-19T03:24:00.000Z"
     },
     {
         train: "EN 40467",
-        journeyRef: "84/267796/18/19/80"
+        journeyRef: "84/267796/18/19/80",
+        lastDeparture: "2018-06-18T03:12:00.000Z"
     },
     {
         train: "IC 516",
-        journeyRef: "84/257824/18/19/80"
+        journeyRef: "84/257824/18/19/80",
+        lastDeparture: "2018-06-19T03:24:00.000Z"
     },
     {
         train: "IC 3518",
-        journeyRef: "84/252900/18/19/80"
+        journeyRef: "84/252900/18/19/80",
+        lastDeparture: "2018-06-19T03:33:00.000Z"
     },
     {
         train: "ICE 71",
-        journeyRef: "84/215926/18/19/80"
+        journeyRef: "84/215926/18/19/80",
+        lastDeparture: "2018-06-19T03:18:00.000Z"
     },
     {
         train: "EC 7",
-        journeyRef: "84/215818/18/19/80"
+        journeyRef: "84/215818/18/19/80",
+        lastDeparture: "2018-06-19T02:49:00.000Z"
     }
     // …
 ]
 ```
 
 Fetch further information for trains using the `journeyRef` attribute and the `journeyLeg` method provided by the [`db-hafas`](https://github.com/derhuerst/db-hafas) module.
+
+You can use the `lastDeparture` attribute with the [`db-wagenreihung`](https://github.com/juliuste/db-wagenreihung) module.
 
 ## Contributing
 

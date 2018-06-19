@@ -29,6 +29,7 @@
 		"p-queue": "^2.4.2"
 	},
 	"devDependencies": {
+		"lodash.isdate": "^4.0.1",
 		"tape": "^4.9.0"
 	},
 	"scripts": {
