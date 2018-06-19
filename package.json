@@ -1,7 +1,7 @@
 {
 	"name": "db-train-numbers",
 	"description": "Fetch DB long distance train numbers for a given time interval.",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"keywords": [
 		"db",
 		"german",
