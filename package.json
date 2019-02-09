@@ -30,7 +30,7 @@
 	},
 	"devDependencies": {
 		"lodash.isdate": "^4.0.1",
-		"tape": "^4.9.0"
+		"tape": "^4.10.0"
 	},
 	"scripts": {
 		"test": "node test.js",
