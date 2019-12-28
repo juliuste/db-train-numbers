@@ -22,7 +22,7 @@
 		"index.js"
 	],
 	"dependencies": {
-		"db-zugradar-client": "^0.2.2",
+		"db-zugradar-client": "0.2.2",
 		"lodash.merge": "^4.6.1",
 		"lodash.unionby": "^4.8.0",
 		"moment": "^2.22.2",
